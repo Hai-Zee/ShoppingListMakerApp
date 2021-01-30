@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "822224436574",
+    "firebase_url": "https://shoppinglist-zeeshan.firebaseio.com",
+    "project_id": "shoppinglist-zeeshan",
+    "storage_bucket": "shoppinglist-zeeshan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822224436574:android:3b3c54ad6d6ccf3b2123cf",
+        "android_client_info": {
+          "package_name": "com.example.shoppinglist_zeeshan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822224436574-dv62otle6ruuv1u9eh0l8h80t2tr7ffs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF867mxpkj7FkN8-nT9WvMw-C9mgbu1Xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822224436574-dv62otle6ruuv1u9eh0l8h80t2tr7ffs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

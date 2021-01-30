@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/createEmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/createPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:boxStrokeColor="@color/black"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/createEmailID"
+        app:layout_constraintStart_toStartOf="@+id/createEmailID"
+        app:layout_constraintTop_toBottomOf="@+id/createEmailID">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createAccountButtonID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="casual"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/createPassword"
+        app:layout_constraintStart_toStartOf="@id/createPassword"
+        app:layout_constraintTop_toBottomOf="@id/createPassword"
+        app:strokeColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/createLinearLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textView4ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="24dp"
+            android:text="existed user ?  "
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/createLinearLayoutID"
+            app:layout_constraintStart_toStartOf="@id/createLinearLayoutID" />
+
+        <TextView
+            android:id="@+id/goToLogInAccountID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="casual"
+            android:text="Log in"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4ID"
+            app:layout_constraintStart_toEndOf="@+id/textView4ID" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
